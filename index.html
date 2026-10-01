@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI: The Intelligence We Created | Aryan & Team</title>
+<style>
+:root{
+  --bg:#07111f; --bg2:#0b1930; --card:rgba(15,31,54,.78);
+  --text:#eef6ff; --muted:#a9bdd5; --cyan:#56e0ff; --violet:#9b7bff;
+  --green:#53e6a8; --red:#ff6f91; --line:rgba(255,255,255,.1);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:
+radial-gradient(circle at 15% 10%,rgba(86,224,255,.12),transparent 30%),
+radial-gradient(circle at 85% 25%,rgba(155,123,255,.12),transparent 30%),var(--bg);
+line-height:1.7}
+nav{position:fixed;top:0;width:100%;z-index:20;background:rgba(7,17,31,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;letter-spacing:1px;color:var(--cyan)}
+nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:var(--cyan)}
+section{max-width:1180px;margin:auto;padding:90px 22px}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.badge{display:inline-block;border:1px solid rgba(86,224,255,.35);color:var(--cyan);padding:7px 14px;border-radius:999px;font-size:13px;background:rgba(86,224,255,.06)}
+h1{font-size:clamp(48px,8vw,92px);line-height:.98;margin:20px 0;background:linear-gradient(100deg,#fff,var(--cyan),var(--violet));-webkit-background-clip:text;color:transparent}
+h2{font-size:42px;line-height:1.1;margin-bottom:12px}
+h3{margin-top:0}
+.lead{font-size:19px;color:var(--muted);max-width:700px}
+.btn{display:inline-block;margin-top:20px;padding:12px 19px;border-radius:12px;text-decoration:none;color:#03101c;background:var(--cyan);font-weight:800}
+.orb{width:330px;height:330px;border-radius:50%;margin:auto;background:
+radial-gradient(circle at 35% 30%,#d8fbff 0 4%,transparent 5%),
+radial-gradient(circle at 65% 65%,rgba(155,123,255,.8),transparent 30%),
+radial-gradient(circle,#0c3048 0 35%,#081522 60%);
+box-shadow:0 0 70px rgba(86,224,255,.22),inset 0 0 50px rgba(155,123,255,.18);
+display:grid;place-items:center;font-size:85px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}
+.stat,.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.stat strong{display:block;font-size:28px;color:var(--cyan)}
+.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(86,224,255,.35)}
+.icon{font-size:30px;margin-bottom:10px}
+.good{border-top:3px solid var(--green)}
+.bad{border-top:3px solid var(--red)}
+.timeline{border-left:2px solid rgba(86,224,255,.3);padding-left:25px}
+.step{margin:25px 0;position:relative}
+.step:before{content:"";width:11px;height:11px;border-radius:50%;background:var(--cyan);position:absolute;left:-32px;top:9px}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden}
+th,td{padding:15px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--cyan)}
+.quote{font-size:25px;padding:35px;border-left:4px solid var(--violet);background:rgba(155,123,255,.08);border-radius:12px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.member{text-align:center}
+.avatar{width:75px;height:75px;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;background:linear-gradient(135deg,var(--cyan),var(--violet));color:#07111f;font-weight:900;font-size:25px}
+footer{padding:35px 22px;text-align:center;border-top:1px solid var(--line);color:var(--muted)}
+@media(max-width:800px){
+ .hero-grid,.grid,.team{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}
+ nav .links{display:none}.orb{width:240px;height:240px}
+}
+</style>
+</head>
+<body>
+<nav>
+ <div class="nav">
+  <div class="logo">AI // PRESENTATION</div>
+  <div class="links">
+   <a href="#what">What is AI?</a><a href="#benefits">Benefits</a><a href="#risks">Risks</a><a href="#future">Future</a><a href="#team">Team</a>
+  </div>
+ </div>
+</nav>
+
+<header class="hero">
+<section>
+ <div class="hero-grid">
+  <div>
+   <span class="badge">VARSITY PRESENTATION • ARTIFICIAL INTELLIGENCE</span>
+   <h1>Artificial<br>Intelligence</h1>
+   <p class="lead">The technology that teaches machines to learn, reason, recognize patterns, understand language, create content, and assist humans in solving complex problems.</p>
+   <a class="btn" href="#what">Explore the Presentation ↓</a>
+   <div class="stats">
+    <div class="stat"><strong>AI</strong><span class="muted">Artificial Intelligence</span></div>
+    <div class="stat"><strong>ML</strong><span class="muted">Machine Learning</span></div>
+    <div class="stat"><strong>NLP</strong><span class="muted">Language Intelligence</span></div>
+    <div class="stat"><strong>GenAI</strong><span class="muted">Generative AI</span></div>
+   </div>
+  </div>
+  <div class="orb">✦</div>
+ </div>
+</section>
+</header>
+
+<main>
+<section id="what">
+ <span class="badge">01 • FOUNDATION</span>
+ <h2>What is Artificial Intelligence?</h2>
+ <p class="lead">Artificial Intelligence is a field of computer science focused on creating systems that can perform tasks that normally require human intelligence.</p>
+ <div class="grid">
+  <article class="card"><div class="icon">🧠</div><h3>Learning</h3><p>AI systems can learn patterns from data and improve their performance through machine-learning techniques.</p></article>
+  <article class="card"><div class="icon">👁️</div><h3>Perception</h3><p>Computer vision and other AI methods can interpret images, video, speech, sensors, and other forms of information.</p></article>
+  <article class="card"><div class="icon">⚙️</div><h3>Decision Support</h3><p>AI can analyze large amounts of information and provide predictions, recommendations, or generated outputs.</p></article>
+ </div>
+</section>
+
+<section>
+ <span class="badge">02 • HOW IT WORKS</span>
+ <h2>From Data to Intelligence</h2>
+ <div class="timeline">
+  <div class="step"><h3>1. Data</h3><p class="muted">AI models need examples such as text, images, audio, numbers, or sensor readings.</p></div>
+  <div class="step"><h3>2. Training</h3><p class="muted">Algorithms identify patterns in training data and adjust model parameters to reduce errors.</p></div>
+  <div class="step"><h3>3. Model</h3><p class="muted">The trained model can process new inputs and produce classifications, predictions, recommendations, or generated content.</p></div>
+  <div class="step"><h3>4. Evaluation & Human Oversight</h3><p class="muted">Systems should be tested for accuracy, bias, safety, privacy, and real-world performance before important use.</p></div>
+ </div>
+</section>
+
+<section id="benefits">
+ <span class="badge">03 • POSITIVE IMPACT</span>
+ <h2>Good Effects of AI</h2>
+ <div class="grid">
+  <article class="card good"><div class="icon">🏥</div><h3>Healthcare</h3><p>AI can support medical image analysis, research, clinical documentation, drug discovery, and patient-care workflows.</p></article>
+  <article class="card good"><div class="icon">🎓</div><h3>Education</h3><p>AI can provide personalized practice, tutoring support, translation, feedback, and tools for teachers.</p></article>
+  <article class="card good"><div class="icon">🏭</div><h3>Industry</h3><p>AI can help with quality inspection, predictive maintenance, optimization, forecasting, and automation.</p></article>
+  <article class="card good"><div class="icon">🌾</div><h3>Agriculture</h3><p>Computer vision, sensors, and prediction models can assist crop monitoring, irrigation, and disease detection.</p></article>
+  <article class="card good"><div class="icon">♿</div><h3>Accessibility</h3><p>Speech recognition, captioning, image descriptions, translation, and assistive interfaces can improve access to information.</p></article>
+  <article class="card good"><div class="icon">🔬</div><h3>Scientific Research</h3><p>AI can accelerate data analysis, simulation, pattern discovery, and the exploration of complex scientific problems.</p></article>
+ </div>
+</section>
+
+<section id="risks">
+ <span class="badge">04 • CHALLENGES</span>
+ <h2>Bad Effects & Risks</h2>
+ <p class="lead">AI can create value, but its impact depends on how systems are designed, deployed, governed, and used.</p>
+ <div class="grid">
+  <article class="card bad"><div class="icon">📰</div><h3>Misinformation & Deepfakes</h3><p>Generative systems can make convincing false text, images, audio, or video, making verification more difficult.</p></article>
+  <article class="card bad"><div class="icon">🔒</div><h3>Privacy</h3><p>AI systems can process large datasets, creating risks when personal information is collected, exposed, or used without appropriate safeguards.</p></article>
+  <article class="card bad"><div class="icon">⚖️</div><h3>Bias & Fairness</h3><p>Models may reproduce or amplify patterns in their training data, potentially producing unequal outcomes.</p></article>
+  <article class="card bad"><div class="icon">💼</div><h3>Job Disruption</h3><p>Automation can change tasks and occupations. Some roles may shrink while new roles and skills emerge.</p></article>
+  <article class="card bad"><div class="icon">🛡️</div><h3>Security Misuse</h3><p>AI can be used for harmful activities such as sophisticated scams, impersonation, or automated attacks.</p></article>
+  <article class="card bad"><div class="icon">🌍</div><h3>Energy & Environment</h3><p>Training and operating large AI systems can require substantial computing resources, electricity, cooling, and hardware.</p></article>
+ </div>
+</section>
+
+<section>
+ <span class="badge">05 • REAL WORLD</span>
+ <h2>Where We See AI Today</h2>
+ <table>
+  <tr><th>Area</th><th>Examples</th><th>Human Role</th></tr>
+  <tr><td>Communication</td><td>Translation, speech recognition, writing assistance</td><td>Review and verify important outputs</td></tr>
+  <tr><td>Business</td><td>Forecasting, customer support, analytics</td><td>Set goals and monitor decisions</td></tr>
+  <tr><td>Healthcare</td><td>Image analysis, research, documentation</td><td>Qualified professionals remain responsible</td></tr>
+  <tr><td>Education</td><td>Tutoring, feedback, personalized learning</td><td>Teachers guide learning and assessment</td></tr>
+  <tr><td>Creative Work</td><td>Text, image, audio, video generation</td><td>People provide intent, judgment, and originality</td></tr>
+ </table>
+</section>
+
+<section id="future">
+ <span class="badge">06 • LOOKING AHEAD</span>
+ <h2>The Future of AI</h2>
+ <div class="grid">
+  <article class="card"><h3>🤝 Human + AI</h3><p>The most useful future may involve collaboration: AI handles patterns and scale while humans provide context, values, responsibility, and judgment.</p></article>
+  <article class="card"><h3>📜 Responsible AI</h3><p>Future systems will need stronger attention to transparency, safety, privacy, fairness, accountability, and governance.</p></article>
+  <article class="card"><h3>🧑‍💻 New Skills</h3><p>AI literacy, critical thinking, data skills, cybersecurity, communication, and domain expertise are increasingly valuable.</p></article>
+ </div>
+ <div class="quote">“The important question is not only what AI can do, but how humans choose to use it.”</div>
+</section>
+
+<section>
+ <span class="badge">07 • KEY TAKEAWAY</span>
+ <h2>AI Is a Tool — Our Choices Matter</h2>
+ <p class="lead">Artificial Intelligence is neither automatically good nor automatically bad. Its effects depend on its purpose, data, design, safeguards, and the people and institutions using it.</p>
+ <div class="card">
+  <h3>Responsible AI Checklist</h3>
+  <p>✓ Verify important information &nbsp; ✓ Protect personal data &nbsp; ✓ Check for bias &nbsp; ✓ Keep human oversight &nbsp; ✓ Respect intellectual property &nbsp; ✓ Use AI ethically</p>
+ </div>
+</section>
+
+<section id="team">
+ <span class="badge">08 • PRESENTED BY</span>
+ <h2>Our Team</h2>
+ <div class="team">
+  <div class="card member"><div class="avatar">A</div><h3>Aryan</h3><p class="muted">Presenter</p></div>
+  <div class="card member"><div class="avatar">D</div><h3>Devabanda</h3><p class="muted">Team Member</p></div>
+  <div class="card member"><div class="avatar">S</div><h3>Saoukhoy</h3><p class="muted">Team Member</p></div>
+ </div>
+</section>
+</main>
+
+<footer>
+ Artificial Intelligence • University Presentation • Aryan, Devabanda & Saoukhoy
+</footer>
+</body>
+</html>
